@@ -1,11 +1,11 @@
 #pragma once
 #include "Shape.h"
-class Line :
+class Oval :
 	public Shape
 {
 public:
-	Line(int x, int y, HPEN hPen, HBRUSH hBrush);
-	~Line();
+	Oval(int x, int y, HPEN hPen, HBRUSH hBrush);
+	~Oval();
 
 protected:
 	virtual void render(HDC hdc);

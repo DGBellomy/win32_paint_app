@@ -11,11 +11,14 @@ protected:
 	POINT mEndPos;
 	
 public:
-	Shape(int x, int y);
+	Shape(int x, int y, HPEN hPen, HBRUSH hBrush);
 	~Shape();
 
 	void setEndPos(int x, int y);
 
-	virtual void draw(HDC hdc) = 0;
+	void draw(HDC hdc);
+
+protected:
+	virtual void render(HDC hdc) = 0;
 };
 
