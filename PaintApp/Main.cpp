@@ -1,4 +1,3 @@
-#include "stdafx.h"
 #include "PaintApp.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE prevInstance, PSTR cmdLine, int showCmd)
