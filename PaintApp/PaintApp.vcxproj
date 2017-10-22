@@ -75,12 +75,14 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\Garrett\Documents\github\win32_paint_app\PaintApp\headers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>D:\Garrett\Documents\github\win32_paint_app\PaintApp\headers;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -139,24 +141,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Line.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Oval.cpp" />
-    <ClCompile Include="PaintApp.cpp" />
-    <ClCompile Include="Rect.cpp" />
-    <ClCompile Include="Shape.cpp" />
+    <ClCompile Include="src\Line.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Oval.cpp" />
+    <ClCompile Include="src\PaintApp.cpp" />
+    <ClCompile Include="src\Rect.cpp" />
+    <ClCompile Include="src\Shape.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Colors.h" />
-    <ClInclude Include="Line.h" />
-    <ClInclude Include="Oval.h" />
-    <ClInclude Include="PaintApp.h" />
-    <ClInclude Include="Rect.h" />
-    <ClInclude Include="resource.h" />
-    <ClInclude Include="Shape.h" />
+    <ResourceCompile Include="resources\PaintApp.rc" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="PaintApp.rc" />
+    <ClInclude Include="headers\Colors.h" />
+    <ClInclude Include="headers\Line.h" />
+    <ClInclude Include="headers\Oval.h" />
+    <ClInclude Include="headers\PaintApp.h" />
+    <ClInclude Include="headers\Rect.h" />
+    <ClInclude Include="headers\resource.h" />
+    <ClInclude Include="headers\Shape.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
